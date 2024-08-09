@@ -1,0 +1,28 @@
+ <!-- Fantasma asistente -->
+ <div class="assistant">
+  <img src="https://img.icons8.com/ios/50/000000/ghost.png" alt="Fantasma">
+  <p>Hola, Soy tu asistente de gestión de tareas</p>
+</div>
+
+
+
+<div class="form-container">
+  <h1>Gestor de Gastos Personales</h1>
+
+  <div class="form-group">
+      <label for="categoria">Categoría:</label>
+      <input type="text" id="categoria" [(ngModel)]="categoria" class="form-control">
+  </div>
+
+  <div class="form-group">
+      <label for="monto">Monto:</label>
+      <input type="number" id="monto" [(ngModel)]="monto" class="form-control">
+  </div>
+
+  <div class="form-group">
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" [(ngModel)]="fecha" class="form-control">
+  </div>
+
+  <button (click)="registrarGasto()" class="btn btn-primary">Registrar Gasto</button>
+</div>
