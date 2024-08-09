@@ -1,7 +1,9 @@
-/* Estilo general del cuerpo de la página */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
+  background-image: url('https://previews.123rf.com/images/foxindustry/foxindustry1505/foxindustry150500013/39975735-naranja-suave-en-colores-pastel-p%C3%A1lido-bokeh-abstracto-blanco-ilustraci%C3%B3n-de-fondo-vector.jpg');
+  background-size: cover; /* La imagen cubrirá toda el área del fondo */
+  background-position: center; /* La imagen se centrará en el fondo */
+  background-repeat: no-repeat; /* La imagen no se repetirá */
   color: #343a40;
   margin: 0;
   padding: 0;
@@ -10,6 +12,8 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+
 
 /* Estilo del contenedor del formulario */
 .form-container {

@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('app/assets/image/naranja.png');
+    background-size: cover; /* La imagen cubrirá toda el área del fondo */
+    background-position: center; /* La imagen se centrará en el fondo */
+    background-repeat: no-repeat; /* La imagen no se repetirá */
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
