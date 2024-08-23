@@ -1,9 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url('https://previews.123rf.com/images/foxindustry/foxindustry1505/foxindustry150500013/39975735-naranja-suave-en-colores-pastel-p%C3%A1lido-bokeh-abstracto-blanco-ilustraci%C3%B3n-de-fondo-vector.jpg');
-  background-size: cover; /* La imagen cubrirá toda el área del fondo */
-  background-position: center; /* La imagen se centrará en el fondo */
-  background-repeat: no-repeat; /* La imagen no se repetirá */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #343a40;
   margin: 0;
   padding: 0;
@@ -11,24 +11,25 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 }
-
-
 
 /* Estilo del contenedor del formulario */
 .form-container {
-  background-color: #ffffff;
+  background-color: #eecdbe;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  padding: 1.5rem;
   width: 100%;
-  max-width: 480px;
+  max-width: 400px;
   box-sizing: border-box;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: left;
   border: 1px solid #dee2e6;
-  margin: 0 auto; /* Centrado horizontal */
+  margin: 20px auto 0 auto; /* Agrega un margen superior */
+  overflow: hidden;
 }
+
 
 /* Estilo del contenedor del formulario al hacer hover */
 .form-container:hover {
@@ -134,7 +135,7 @@ body {
 @media (max-width: 768px) {
   .form-container {
     padding: 1.5rem;
-    width: 90%;
+    width: 80%;
     max-width: 100%;
   }
 
@@ -171,23 +172,19 @@ body {
   }
 }
 
-
-
-
-
 /* Contenedor del gestor animado */
 .animated-gestor {
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  z-index: 1000;
   text-align: center;
   animation: fadeIn 2s ease-in-out;
 }
 
 /* Imagen del gestor */
 .gestor-image {
-  width: 100px; /* Ajusta el tamaño de la imagen */
+  width: 100px;
   height: auto;
 }
 
@@ -197,6 +194,22 @@ body {
   color: #007bff;
   font-weight: 600;
   margin-top: 0.5rem;
+}
+
+/* Ajustes responsivos para el gestor animado */
+@media (max-width: 480px) {
+  .animated-gestor {
+    top: 10px;
+    left: 10px;
+  }
+
+  .gestor-image {
+    width: 80px;
+  }
+
+  .gestor-greeting {
+    font-size: 0.875rem;
+  }
 }
 
 /* Animación de fade-in */
@@ -211,22 +224,7 @@ body {
   }
 }
 
-
-
- /* Estilo para el fantasma */
- /* Animación para la aparición */
- @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Animación para el desvanecimiento */
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-/* Estilo para el fantasma */
+/* Animación para el fantasma */
 .assistant {
   position: fixed;
   top: 20px;
@@ -238,8 +236,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  animation: fadeIn 2s ease-in-out, fadeOut 2s ease-in-out 4s; /* Aparece en 2s, luego desaparece en 1s después de 4s */
-  animation-fill-mode: forwards; /* Mantiene el estilo final de la animación */
+  animation: fadeIn 2s ease-in-out, fadeOut 2s ease-in-out 4s;
+  animation-fill-mode: forwards;
   z-index: 1000;
 }
 
@@ -253,4 +251,19 @@ body {
   margin: 0;
 }
 
+/* Ajustes responsivos para el asistente */
+@media (max-width: 480px) {
+  .assistant {
+    top: 10px;
+    left: 10px;
+    padding: 8px;
+  }
 
+  .assistant img {
+    width: 40px;
+  }
+
+  .assistant p {
+    font-size: 0.875rem;
+  }
+}
